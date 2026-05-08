@@ -34,9 +34,18 @@ def mostrar_ayuda():
         "!uptime - Muestra el tiempo que el bot ha estado activo.\n"
         "!ayuda - Muestra esta lista de comandos.\n"
     }
-    
+
+
+def salir_agente():
+    """
+    Finaliza la ejecución del bot
+    """
+    print("Finalizando el bot...")
+    return False  
+
+
 def iniciar_agente():
-    NOMBRE_BOT = "Enrique"
+    NOMBRE_BOT = "Pirulin"
     PREFIJO = "!"
     hora_inicio = datetime.datetime.now()
     
@@ -59,11 +68,12 @@ def iniciar_agente():
             print(obtener_saludo(NOMBRE_BOT))
         elif comando == "ayuda":
             print(mostrar_ayuda())
+        elif comando == "salir":
+            ejecutando = salir_agente()
         else:
             print("Comando no reconocido.")
 
-            
-
+        
 
 def main():
     iniciar_agente()
