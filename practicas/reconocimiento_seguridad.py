@@ -1,13 +1,6 @@
 """
 Implementar en Python un sistema de reconocimiento de seguridad
 siguiendo la lógica definida en el planteamiento.
-
-El programa:
-- Define un patrón maestro fijo.
-- Solicita una lectura del sensor al usuario.
-- Compara ambas listas posición por posición.
-- Calcula el porcentaje de similitud.
-- Muestra el estado final del sistema.
 """
 
 
